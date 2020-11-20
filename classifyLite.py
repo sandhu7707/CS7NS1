@@ -74,7 +74,7 @@ def main():
                 prediction = numpy.reshape(prediction, (len(char_output_d),-1))
 
                  #res = decode(captcha_symbols, prediction, len_prediction)
-                res = decode_fix(captcha_symbols, prediction)
+                res = decode(captcha_symbols, prediction)
                 output_file.write(x + "," + res + "\n")
 
                 print('Classified ' + x)
