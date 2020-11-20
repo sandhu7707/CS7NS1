@@ -16,7 +16,7 @@ import itertools
 def decode(characters, y):
     y_idx = numpy.argmax(numpy.array(y), axis=1)
     y_pred = numpy.max(numpy.array(y), axis=1)
-    res = ''.join([characters[x] for i,x in enumerate(y_idx) if y_pred[i]>0.5])
+    res = ''.join([characters[x] for i,x in enumerate(y_idx) if y_pred[i]>0.6])
     return res
 
 def main():
