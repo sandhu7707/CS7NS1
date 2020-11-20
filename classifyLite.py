@@ -51,7 +51,7 @@ def main():
 
     if True:
         with open(args.output, 'w') as output_file:
-            char_interpreter = tflite.Interpreter(args.model_name+'/model_cha.tflite')
+            char_interpreter = tflite.Interpreter(args.model_name)
             char_interpreter.allocate_tensors()
 
             char_input_d = char_interpreter.get_input_details()
