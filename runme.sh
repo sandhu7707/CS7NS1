@@ -2,9 +2,8 @@
 
 #virtual environment
 
-python3 -m venv env/
-source env/bin/activate
-pip install scikit-build
+python3 -m venv env_singhp1/
+source env_singhp1/bin/activate
 pip install opencv-python
 pip install tf-lite
 
